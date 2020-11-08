@@ -1,0 +1,31 @@
+#red {
+	top: 300px;
+    left: 400px;
+    position: absolute;
+}
+
+#silver {
+    top: 350px;
+    left: 450px;
+    position: relative;
+    z-index: -1;
+}
+
+#green {
+    position: fixed;
+    right: 0px;
+    top: 100px;
+
+}
+
+#blue {
+
+}
+
+#yellow {
+    position: absolute;
+    top: 331px;
+    left: 277px;
+
+}
+
