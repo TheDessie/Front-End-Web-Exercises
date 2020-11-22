@@ -1,8 +1,8 @@
 class Person {
     constructor(name) {
         this.name = name;
-        this.planet = "Земя";
     }
+    planet = "Земя";
     printPerson() {
         console.log(`Здравей ${this.name} от планетата ${this.planet}`)
     }
