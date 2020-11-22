@@ -9,18 +9,19 @@
                         <title>OpenUI5</title>
                         <script>
                             function myFunc(sColor1, sColor2) {
-                            let listP = document.getElementsByTagName('p');
-                            let listC = document.getElementsByClassName('headertitle');
-                            let countPTags = listP.length;
-                            let countClass = listC.length;
-                            window.document.title = `${countPTags} параграфа, ${countClass} елемента с клас <headertitle>`;
-                            for (let item of listP) {
-                            item.style.backgroundColor = sColor1;
-                        }
-                            for (let item of listC) {
-                            item.style.backgroundColor = sColor2;
-                        }
-                        }
+                                let listP = document.getElementsByTagName('p');
+                                let listC = document.getElementsByClassName('headertitle');
+                                let countPTags = listP.length;
+                                let countClass = listC.length;
+                                window.document.title = `${countPTags} параграфа, ${countClass} елемента с клас <headertitle>`;
+                                for (let item of listP) {
+                                    item.style.backgroundColor = sColor1;
+                                }
+                                for (let item of listC) {
+                                    item.style.backgroundColor = sColor2;
+                                }
+                            }
+
                         </script>
     </head>
     <body>
@@ -135,6 +136,6 @@
             </div>
         </div>
 
-
+        <script>myFunc('red', 'blue');</script>
     </body></html>
 
