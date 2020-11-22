@@ -47,7 +47,14 @@
             let table = document.getElementsByTagName("tbody")[0];
             let row1 = document.getElementById("row1");
             let row2 = document.getElementById("row2");
-            table.insertBefore(row2, row1);
+            let sibling = row1.previousElementSibling;
+            if (sibling.getAttribute("id") == "row2") {
+                table.insertBefore(row1, row2);
+            }
+            else {
+                table.insertBefore(row2, row1);
+            }
+
         }
 
     </script>
