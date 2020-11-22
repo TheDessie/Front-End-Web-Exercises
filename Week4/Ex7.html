@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function tableCreate() {
+            let body = document.getElementsByTagName('body')[0];
+            let table = document.createElement('table');
+            let tbody = document.createElement('tbody');
+
+            let tableContent = [
+                ["Evidence Rating", "Effect", "Efficacy", "Consensus", "Comments"],
+                ["A", "Power Output", "3 Stars", "80%", "Lorem Ipsum"],
+                ["B", "Weight", "4 Stars", "100%", "Lorem Ipsum2"]
+            ]
+
+            for (let i = 0; i < 3; i++) {
+                tr = document.createElement('tr');
+                if (i > 0) {
+                    tr.setAttribute("id", "row" + i);
+                }
+
+                for (let j = 0; j < 5; j++) {
+                    let td;
+                    if (i == 0) {
+                        td = document.createElement('th');
+                    }
+                    else {
+                        td = document.createElement('td');
+                    }
+
+                    td.appendChild(document.createTextNode(tableContent[i][j]));
+                    tr.appendChild(td)
+                }
+                tbody.appendChild(tr);
+            }
+            table.appendChild(tbody);
+
+            table.style.width = '100%';
+            table.setAttribute('border', '1');
+            table.setAttribute('id', 'table1');
+            body.appendChild(table);
+        }
+
+        function clickButton() {
+            let table = document.getElementsByTagName("tbody")[0];
+            let row1 = document.getElementById("row1");
+            let row2 = document.getElementById("row2");
+            table.insertBefore(row2, row1);
+        }
+
+    </script>
+</head>
+<body>
+
+<script>
+    tableCreate();
+</script>
+<button type="button" onclick="javascript: clickButton()">Click Me!</button>
+</body>
+</html>
