@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function tableCreate() {
+            let body = document.getElementsByTagName('body')[0];
+            let table = document.createElement('table');
+            let tbody = document.createElement('tbody');
+
+            let tableContent = [
+                ["Evidence Rating", "Effect", "Efficacy", "Consensus", "Comments"],
+                ["A", "Power Output", "3 Stars", "80%", "Lorem Ipsum"],
+                ["B", "Weight", "4 Stars", "100%", "Lorem Ipsum2"]
+            ]
+
+            for (let i = 0; i < 3; i++) {
+                tr = document.createElement('tr');
+
+                for (let j = 0; j < 5; j++) {
+                    let td;
+                    if (i == 0) {
+                        td = document.createElement('th');
+                    }
+                    else {
+                        td = document.createElement('td');
+                    }
+
+                    td.appendChild(document.createTextNode(tableContent[i][j]));
+                    tr.appendChild(td)
+                }
+                tbody.appendChild(tr);
+            }
+            table.appendChild(tbody);
+
+            table.style.width = '100%';
+            table.setAttribute('border', '1');
+
+            body.appendChild(table);
+        }
+
+    </script>
+</head>
+<body>
+
+<script>
+    tableCreate();
+</script>
+</body>
+</html>
