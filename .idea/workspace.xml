@@ -10,8 +10,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30bced5e-decf-4d44-9ee7-837d55309b92" name="Default Changelist" comment="Complete Exercise 7">
-      <change afterPath="$PROJECT_DIR$/Week3/Task2.js" afterDir="false" />
+    <list default="true" id="30bced5e-decf-4d44-9ee7-837d55309b92" name="Default Changelist" comment="Implement Exercise 7">
+      <change afterPath="$PROJECT_DIR$/Homework1/css/styles_screen1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework1/css/styles_screen2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework1/css/styles_screen3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework1/img/cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework1/img/profile-pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework1/img/thumb_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework1/img/thumb_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework1/screen1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework1/screen2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Homework1/screen3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,10 +58,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\University\Избираеми дисциплини\Разработка на Front-End Web\FrontEndExcecises\Homework1\css" />
+      <recent name="D:\University\Избираеми дисциплини\Разработка на Front-End Web\FrontEndExcecises\Week3\Task1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name=" " type="NodeJSConfigurationType" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" node-parameters="$/FilePathRelativeToProjectRoot$" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -68,7 +89,12 @@
       <workItem from="1604775604596" duration="1268000" />
       <workItem from="1604819294856" duration="10529000" />
       <workItem from="1605024283323" duration="47000" />
-      <workItem from="1605423780835" duration="8204000" />
+      <workItem from="1605423780835" duration="8587000" />
+      <workItem from="1605717356769" duration="30000" />
+      <workItem from="1606029217999" duration="11110000" />
+      <workItem from="1606470825303" duration="130000" />
+      <workItem from="1606486384114" duration="10975000" />
+      <workItem from="1606574727093" duration="15953000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1603617980150</created>
@@ -266,7 +292,98 @@
       <option name="project" value="LOCAL" />
       <updated>1605426195972</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Complete Task 2">
+      <created>1605432210159</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1605432210159</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Ordering">
+      <created>1605432417250</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1605432417250</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Implement Exercise 2">
+      <created>1606030326693</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1606030326693</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Implement Exercise 2 - version 1">
+      <created>1606031233518</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1606031233518</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Implement Exercise 2 - version 2">
+      <created>1606031253787</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1606031253787</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Implement Exercise 3">
+      <created>1606031969669</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1606031969669</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Implement Exercise 1">
+      <created>1606033453796</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1606033453796</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Implement Exercise 4">
+      <created>1606036383466</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1606036383466</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Implement Exercise 5">
+      <created>1606037447667</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1606037447667</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Implement Exercise 5">
+      <created>1606037658285</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1606037658285</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Implement Exercise 6">
+      <created>1606039074207</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1606039074207</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Implement Exercise 7">
+      <created>1606039999247</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1606039999247</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Implement Exercise 7">
+      <created>1606040314008</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1606040314008</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,17 +403,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Initial commit" />
-    <MESSAGE value="Test commit and push" />
-    <MESSAGE value="Exercise 1 complete" />
-    <MESSAGE value="Complete exercise 1 and add title" />
-    <MESSAGE value="Complete exercise 2" />
-    <MESSAGE value="Complete exercise 3" />
-    <MESSAGE value="Fix exercise 1" />
-    <MESSAGE value="Complete exercise 4" />
-    <MESSAGE value="Complete exercise 5" />
-    <MESSAGE value="Complete exercise 6" />
-    <MESSAGE value="Complete exercise 7" />
     <MESSAGE value="Complete exercise 1" />
     <MESSAGE value="Directory Week2" />
     <MESSAGE value="Complete Exercise 6.1" />
@@ -311,21 +417,36 @@
     <MESSAGE value="Complete Exercise 5" />
     <MESSAGE value="Complete Exercise 6" />
     <MESSAGE value="Complete Exercise 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete Exercise 7" />
+    <MESSAGE value="Complete Task 2" />
+    <MESSAGE value="Ordering" />
+    <MESSAGE value="Implement Exercise 2" />
+    <MESSAGE value="Implement Exercise 2 - version 1" />
+    <MESSAGE value="Implement Exercise 2 - version 2" />
+    <MESSAGE value="Implement Exercise 3" />
+    <MESSAGE value="Implement Exercise 1" />
+    <MESSAGE value="Implement Exercise 4" />
+    <MESSAGE value="Implement Exercise 5" />
+    <MESSAGE value="Implement Exercise 6" />
+    <MESSAGE value="Implement Exercise 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement Exercise 7" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605423996082">
+    <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606029613570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605423996082" />
+    <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606029613570" />
+    <state x="740" y="236" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1606029576057">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="236" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606029576057" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1604830805329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604830805329" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1605024328101">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1606029531052">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605024328101" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606029531052" />
     <state x="784" y="421" key="Github.CreateGistDialog" timestamp="1603617322418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -338,6 +459,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="651" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1603617764330" />
+    <state width="818" height="255" key="GridCell.Tab.0.bottom" timestamp="1606040507497">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="818" height="255" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606040507497" />
+    <state width="818" height="255" key="GridCell.Tab.0.center" timestamp="1606040507497">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="818" height="255" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606040507497" />
+    <state width="818" height="255" key="GridCell.Tab.0.left" timestamp="1606040507497">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="818" height="255" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606040507497" />
+    <state width="818" height="255" key="GridCell.Tab.0.right" timestamp="1606040507497">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="818" height="255" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606040507497" />
     <state x="184" y="86" key="MergeDialog" timestamp="1604830320346">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -346,9 +483,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604830320346" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1605426197642">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1606040315414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605426197642" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606040315414" />
+    <state x="273" y="76" width="587" height="888" key="find.popup" timestamp="1606588336293">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="273" y="76" width="587" height="888" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606588336293" />
+    <state x="677" y="339" key="jetbrains.nodejs.interpreters-dialog" timestamp="1606029476853">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="677" y="339" key="jetbrains.nodejs.interpreters-dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606029476853" />
   </component>
 </project>

@@ -1,0 +1,258 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    font-size: 16px;
+    margin: 0px;
+    font-family: Helvetica, sans-serif;
+    background-image: linear-gradient(-100deg, #A2F2F1 0%, #B19AFE 100%);
+}
+
+#main_header {
+    height: 20%;
+    width: 100%;
+    background-color: white;
+}
+
+#header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#flutter {
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+#search {
+    height: 28px;
+    border: 1px solid #eaeaea;
+    border-radius: 14px;
+    background-color: #f6f6f6;
+    color: #848694;
+    opacity: 1 !important;
+    padding-left: 10px;
+    width: 200px;
+    margin-right: 40px;
+}
+
+#main {
+    display: flex;
+    padding: 10px 10% 0 10%
+}
+
+#profile {
+    width: 40%;
+    max-width: 18rem;
+    background-color: white;
+    border: 1px solid #eaeaea;
+    height: 250px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#profile_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#timeline {
+    width: 70%;
+    max-width: 55rem;
+    background-color: white;
+    border: 1px solid #eaeaea;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#profile_footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#profile_footer_first {
+    display: flex;
+}
+
+#profile_footer_base {
+    /*padding-top: 10px;*/
+    height: 52px;
+    background-color: #f6f6f6;
+}
+
+#posts, #reactions {
+    /*margin-top: 5px;*/
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #848694;
+}
+
+#num_posts, #num_reactions {
+    font-weight: bold;
+    color: #56c7dd;
+    margin-left: 10px;
+}
+
+#log_out {
+    font-weight: bold;
+    color: #56c7dd;
+    border: #56c7dd 1px solid;
+    border-radius: 16px;
+    margin-right: 10px;
+    /*margin-top: 5px;*/
+    height: 30px;
+}
+
+#timeline_header {
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+#status_text {
+    width: 90%;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    color: #56c7dd;
+    opacity: 1 !important;
+    height: 28px;
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+#status_text_li {
+    flex-grow: 7;
+}
+
+#name {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#timeline_header_img {
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.article_heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article_heading_first {
+    display: flex;
+    align-items: center;
+}
+
+.article_heading li {
+    margin-top: 7px;
+}
+
+.article {
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    padding: 10px 30px;
+}
+
+.article_aside {
+    margin-top: 10px;
+}
+
+.article_name {
+    font-weight: bold;
+}
+
+.article_main {
+    margin-left: 12px;
+}
+
+.article_footer {
+    display: flex;
+    margin-top: 10px;
+}
+
+.mins {
+    color: #848694;
+    margin-left: 7px;
+    font-size: 14px;
+}
+
+.profile_pic_big {
+    width: 110px;
+    height: 110px;
+    border: 1px white solid;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.profile_pic_med {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px white solid;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.profile_pic_small {
+    width: 40px;
+    height: 40px;
+    border: 1px white solid;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.cross {
+    margin-top: 7px;
+    width: 20px;
+}
+
+.thumb1, .thumb2 {
+    width: 17px;
+    margin-right: 3px;
+}
+
+.thumb2 {
+    margin-left: 40px;
+}
+
+::-moz-placeholder {
+    opacity: 1 !important;
+}
+
+::-webkit-input-placeholder {
+    opacity: 1 !important;
+}
+
+@media (max-width:890px) {
+    #main {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #profile, #timeline {
+        max-width: 50rem;
+        width: 90%
+    }
+}
+
+
