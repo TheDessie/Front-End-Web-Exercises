@@ -14,7 +14,7 @@ const callback = (success, code, msg) => {
 }
 
 const validate = () => {
-    document.getElementById("register-form").addEventListener("submit", event => {event.preventDefault()})
+    // document.getElementById("register-form").addEventListener("submit", event => {event.preventDefault()})
     let msg = [];
     let data = validateUsername();
     if (data) msg.push(data);
