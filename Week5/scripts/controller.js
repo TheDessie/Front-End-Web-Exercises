@@ -1,20 +1,16 @@
 
-const myFunc = () => {
-    window.auth.register(document.getElementById("username"), document.getElementById("email"),
-        document.getElementById("password"), callback);
-
-}
-
 const callback = (success, code, msg) => {
     if (!success) {
-        // alert("hi");
         document.getElementById("errors").innerHTML = msg;
-
+    }
+    else {
+        window.location.href = "./posts.html";
     }
 }
 
-const validate = () => {
-    // document.getElementById("register-form").addEventListener("submit", event => {event.preventDefault()})
+const validate = (event) => {
+    event.preventDefault();
+
     let msg = [];
     let data = validateUsername();
     if (data) msg.push(data);
@@ -31,8 +27,17 @@ const validate = () => {
         document.getElementById("errors").innerHTML = msg;
         return false;
     }
-    return true;
+
+    window.auth.register(document.getElementsByName("username")[0].value,
+        document.getElementsByName("email")[0].value,
+        document.getElementsByName("password")[0].value,
+        callback);
 }
+
+
+const form = document.getElementById('register-form');
+form.addEventListener('submit', validate);
+
 
 const validateUsername = () => {
     if (document.getElementsByName("username").length === 0) {
