@@ -4,6 +4,9 @@ const callback = (success, code, msg) => {
         document.getElementById("errors").innerHTML = msg;
     }
     else {
+        if (document.getElementById("register-form")) {
+            alert("Successful registration!");
+        }
         window.location.href = "./posts.html";
     }
 }
@@ -27,15 +30,22 @@ const validate = (event) => {
         document.getElementById("errors").innerHTML = msg;
         return false;
     }
+    if (document.getElementById("register-form")) {
 
-    window.auth.register(document.getElementsByName("username")[0].value,
-        document.getElementsByName("email")[0].value,
-        document.getElementsByName("password")[0].value,
-        callback);
+        window.auth.register(document.getElementsByName("username")[0].value,
+            document.getElementsByName("email")[0].value,
+            document.getElementsByName("password")[0].value,
+            callback);
+    }
+    else {
+        window.auth.login(document.getElementsByName("email")[0].value,
+            document.getElementsByName("password")[0].value,
+            callback);
+    }
 }
 
 
-const form = document.getElementById('register-form');
+const form = document.forms[0];
 form.addEventListener('submit', validate);
 
 
