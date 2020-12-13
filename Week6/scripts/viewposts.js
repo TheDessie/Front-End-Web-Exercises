@@ -7,6 +7,7 @@
 	const profileName = document.getElementById("profile-name");
 	const posts = document.getElementById("profile-posts-count");
 	const reactions = document.getElementById("profile-likes-count");
+	const loader = document.getElementById("loader");
 	const post = data => {
 		const state = data.val();
 
@@ -62,16 +63,32 @@
 	tweetsDB.on('child_added', data => {
 		// return true;
 		// Logic when new tweet is added
+
+		if (!validateUser()) {
+			return;
+		}
+		loader.style.display = "none";
+
 		let divPost = document.createElement("DIV");
 		divPost.classList.add("post");
 		divPost.innerHTML = post(data);
 		postContainer.appendChild(divPost)
 
-		// console.log(validateUser())
+		divPost.querySelector(".like-btn").addEventListener("click", event => {
+			tweet.incrementLikes(event.target.getAttribute("data-id"));
+			event.preventDefault();
+		})
 
-		// console.log("hi1")
-		// console.log(post(data));
-		// console.log("hi2")
+		divPost.querySelector(".dislike-btn").addEventListener("click", event => {
+			tweet.incrementDislikes(event.target.getAttribute("data-id"));
+			event.preventDefault();
+		})
+
+		divPost.querySelector(".post-close").addEventListener("click", event => {
+			tweet.delete(event.target.getAttribute("data-id"));
+			document.getElementById("post-container").removeChild(event.target.parentNode.parentNode);
+			event.preventDefault();
+		})
 	});
 
 	tweetsDB.on('child_changed', data => {
