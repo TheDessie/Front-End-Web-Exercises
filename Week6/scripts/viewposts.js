@@ -14,28 +14,28 @@
 		return `<figure class="profile-avatar post-section-avatar">
               <img src="images/avatar.png" alt="BP" class="profile-image">
           </figure>
-          <div class="post-content">
-              <div class="post-author">
-                  <h3 class="post-author-name">${state.username}</h3>
-                  <span class="post-delimiter fa fa-circle"></span>
-                  <span class="post-date">${time_ago(new Date(state.date))}</span>
-              </div>
-              <p class="post-text">${state.message}</p>
-              <div class="post-footer">
-                  <div class="post-reaction">
-                      <button class="far fa-thumbs-up like-btn" data-id="${data.key}"></button>
-                      <span class="post-likes">${state.likes}</span>
-                  </div>
-
-                  <div class="post-reaction dislike-container">
-                      <button class="far fa-thumbs-down dislike-btn" data-id="${data.key}"></button>
-                      <span class="post-dislikes">${state.dislikes}</span>
-                  </div>
-              </div>
-          </div>
-          <div class="post-close">
-              <button class="post-close fa fa-times" data-id="${data.key}"></button>
-          </div>`;
+			  <div class="post-content">
+				  <div class="post-author">
+					  <h3 class="post-author-name">${state.username}</h3>
+					  <span class="post-delimiter fa fa-circle"></span>
+					  <span class="post-date">${time_ago(new Date(state.date))}</span>
+				  </div>
+				  <p class="post-text">${state.message}</p>
+				  <div class="post-footer">
+					  <div class="post-reaction">
+						  <button class="far fa-thumbs-up like-btn" data-id="${data.key}"></button>
+						  <span class="post-likes" id="likes-${data.key}">${state.likes}</span>
+					  </div>
+	
+					  <div class="post-reaction dislike-container">
+						  <button class="far fa-thumbs-down dislike-btn" data-id="${data.key}"></button>
+						  <span class="post-dislikes" id="dislikes-${data.key}">${state.dislikes}</span>
+					  </div>
+				  </div>
+			  </div>
+			  <div class="post-close">
+				  <button class="post-close fa fa-times" data-id="${data.key}"></button>
+			  </div>`;
 	};
 
 	newPost.addEventListener('submit', event => {
@@ -93,7 +93,10 @@
 
 	tweetsDB.on('child_changed', data => {
 		// Like / Dislike logic here
-		// tweet.incrementLikes()
+		let reactionLike = document.getElementById(`likes-${data.key}`);
+		let reactionDislike = document.getElementById(`dislikes-${data.key}`);
+		reactionLike.innerHTML = data.val().likes;
+		reactionDislike.innerHTML = data.val().dislikes;
 
 	});
 
